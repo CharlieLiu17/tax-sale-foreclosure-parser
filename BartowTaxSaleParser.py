@@ -4,7 +4,7 @@ import docx
 class BartowTaxSaleParser:
 
     #source: file name string (must be word doc) containing the tax sale information
-    #file: string that represents the keyword to parse for the parcel 
+    #file: string that represents the keyword to parse for the file number 
     #parcel: string that represents the keyword to parse for the parcel number i.e. Map/Parcel Number:
     #owner: string that represents the keyword to parse for the owner i.e. "Current Property Owner"
     #address: string that represents the keyword to parse for the address i.e. "known as"
@@ -75,7 +75,7 @@ class BartowTaxSaleParser:
         for col, list in enumerate(all_lists):
             for row, val in enumerate(list):
                 sheet1.write(row + row_offset, col, val)
-        workbook.save('Tax Sales.xls')
+        workbook.save(f"../Result/{self.output_file_name}.xls")
         #
             
 
@@ -100,7 +100,7 @@ class BartowTaxSaleParser:
             fullText.append(para.text)
         return ' '.join(fullText)
 
-parser = BartowTaxSaleParser("F:\Downloads\Bartow_County_Tax_Sale_June_2022_List.docx", "File #", "Map/Parcel Number", "Current Property Owner", "known as", "Bartow County Tax Sales Spreadsheet")
+parser = BartowTaxSaleParser("../Source/source.docx", "File #", "Map/Parcel Number", "Current Property Owner", "known as", "result")
 # parser.retrieve_parcel()
 parser.retrieve_file()
 parser.retrieve_parcel()
