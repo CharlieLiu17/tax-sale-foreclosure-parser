@@ -106,7 +106,7 @@ class TaxSaleParser:
             fullText.append(para.text)
         return ' '.join(fullText)
 
-parser = TaxSaleParser("./Forsyth.xlsx",)
+parser = TaxSaleParser("../source/options.xlsx",)
 # parser.retrieve_parcel()
 parser.find_args()
 parser.split_info()
