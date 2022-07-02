@@ -6,7 +6,7 @@ class TaxSaleParser:
 
     #option: file name string (must be excel) containing the excel with county option info
     def __init__(self, option: str) -> None:
-        self.text = self.readtxt("../Source/source.docx")
+        self.text = self.readtxt("./Source/source.docx")
         self.option = option
         self.output_file_name = "result"
         self.args_dict = {}
@@ -85,7 +85,7 @@ class TaxSaleParser:
                     col_offset += 1
                 sheet1.write(row + row_offset, col + col_offset, val)
             col += 1
-        workbook.save(f"../Result/{self.output_file_name}.xls")
+        workbook.save(f"./Result/{self.output_file_name}.xls")
 
     def find_text(self, text, start_text, end_text, offset):
         index_of_address = text.find(start_text)
@@ -112,7 +112,7 @@ class TaxSaleParser:
             fullText.append(para.text)
         return ' '.join(fullText)
 
-parser = TaxSaleParser("../source/options.xlsx",)
+parser = TaxSaleParser("./source/options.xlsx",)
 # parser.retrieve_parcel()
 parser.find_args()
 parser.split_info()
