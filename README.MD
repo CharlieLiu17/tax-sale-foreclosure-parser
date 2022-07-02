@@ -26,7 +26,8 @@ As an example, a user might need every property's current owner's name, property
 | Loan Amount | principal amount of <br /> in the amount of | ), <br /> , <br /> dated <br /> dollars, <br /> with |
 | Attorney | Attorney in Fact for <br /> attorney-in-fact for | , |
 
-Given this option file and source word document with the tax sale or foreclosure information, run the respective parser file (
+Given this option file and source word document with the tax sale or foreclosure information, run the respective parser file (ForeclosureParser.py or TaxSaleParser.py) and a result excel sheet will be generated. An example result will look like this: 
+
 
 How to use: just run the python file for the respective county and it should generate a excel file with all information parsed out
 Developed on Python 3.7.9
