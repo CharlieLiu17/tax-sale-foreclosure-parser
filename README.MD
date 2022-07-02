@@ -1,4 +1,4 @@
-# Tax Sales and Foreclosure Parser
+# Tax Sale and Foreclosure Parser
 
 ## What are foreclosures?
 
