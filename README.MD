@@ -30,7 +30,7 @@ Given this option file and source word document with the tax sale or foreclosure
 
 ![Example Result](./Images/Example%20Result.JPG?raw=true "Example Result")
 
-Once outputted, format as needed, and you have all the information you need to quickly review all of a properties
+Once outputted, format as needed, and you have all the information you need to quickly review all of the properties.
 
 ## How to install
 
