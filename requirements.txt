@@ -1,0 +1,4 @@
+docx==0.2.4
+openpyxl==3.0.10
+python_docx==0.8.11
+xlwt==1.3.0
