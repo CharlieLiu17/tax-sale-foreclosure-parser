@@ -28,6 +28,13 @@ As an example, a user might need every property's current owner's name, property
 
 Given this option file and source word document with the tax sale or foreclosure information, run the respective parser file (ForeclosureParser.py or TaxSaleParser.py) and a result excel sheet will be generated. An example result will look like this: 
 
+![Example Result](./Images/Example%20Result.JPG?raw=true "Example Result")
 
-How to use: just run the python file for the respective county and it should generate a excel file with all information parsed out
-Developed on Python 3.7.9
+Once outputted, format as needed, and you have all the information you need to quickly review all of a properties
+
+## How to install
+
+Developed on Python 3.7.9, so any version >= 3.7.9 is recommended.
+
+Once cloned, run ``` pip install -r requirements.txt ``` to install the necessary packages. Populate the Source folder with a source.docx and options.xlsx with the format specified above. Then run ```python ForeclosureParser.py``` or ```python TaxSaleParser.py``` to run.
+
