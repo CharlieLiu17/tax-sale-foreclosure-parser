@@ -7,16 +7,16 @@ Foreclosures are more common knowledge to the layman than tax sales. In a forecl
 ## What are tax sales?
 
 Tax sales are an essential concept in the housing industry. Properties whose property taxes are not paid off are auctioned in a monthly tax sale,
-akin to how bank foreclose houses based on mortgages not being paid off. Local counties post the information about tax sales on their website or in the 
-local newspaper. Currently, counties in Georgia post all information sent out in one large string of text.
+akin to how bank foreclose houses based on mortgages not being paid off. Local counties post the information about current tax sales on their website or in the 
+local newspaper. Currently, counties in Georgia also post all information in one large string of text.
 
 ## What does the project solve?
 
-In order to make viewing the hundreds of properties embedded within these large information dumps easier without loss of information, this program allows for the user to define any fields they need. It can parse out each property's important characteristics. The program gives ultimate flexibility.
+In order to make viewing the hundreds of properties embedded within these large information dumps easier while not losing any information, this program allows for the user to define any fields they need and any number of ways to retrieve those fields. It can then parse out each property's important characteristics. The program gives ultimate flexibility.
 
 ## How does it work?
 
-As an example, a user might need every property's current owner's name, property's address, loan date, loan amount, and attorney. To find each field, each field has potential beginning parameters and potential endng parameters to search for. These arguments are inputted in an external options excel file. An example of an options file is below:
+As an example, a user might need every property's current owner's name, address, loan date, loan amount, and attorney. To find each field, each field has potential beginning parameters and potential endng parameters to search for. These arguments are inputted in an external options excel file. An example of an options file is below:
 
 | Field Name | Beg ID  | End ID  |
 | :---:   | :-: | :-: |
