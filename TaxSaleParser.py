@@ -77,7 +77,13 @@ class TaxSaleParser:
         col = 0
         for field in self.parsed_dict:
             for row, val in enumerate(self.parsed_dict[field]):
-                sheet1.write(row + row_offset, col, val)
+                col_offset = 0
+                while (len(val) > 32767):
+                    write_val = val[0:32767]
+                    sheet1.write(row + row_offset, col + col_offset, write_val)
+                    val = val[32767:]
+                    col_offset += 1
+                sheet1.write(row + row_offset, col + col_offset, val)
             col += 1
         workbook.save(f"../Result/{self.output_file_name}.xls")
 
